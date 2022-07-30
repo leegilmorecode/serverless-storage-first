@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "566e9f2a-d7a4-41cc-b2f8-ed15e15a865f",
+    "name": "Serverless Storage First",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "List Orders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://xxx.execute-api.eu-west-1.amazonaws.com/prod/orders",
+          "protocol": "https",
+          "host": ["xxx", "execute-api", "eu-west-1", "amazonaws", "com"],
+          "path": ["prod", "orders"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"poop\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://xxx.execute-api.eu-west-1.amazonaws.com/prod/orders",
+          "protocol": "https",
+          "host": ["xxx", "execute-api", "eu-west-1", "amazonaws", "com"],
+          "path": ["prod", "orders"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cancel Order",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"leegilmorelovespizza\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://xxx.execute-api.eu-west-1.amazonaws.com/prod/orders",
+          "protocol": "https",
+          "host": ["xxx", "execute-api", "eu-west-1", "amazonaws", "com"],
+          "path": ["prod", "orders"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
